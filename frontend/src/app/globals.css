@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@keyframes swipeRight {
+    0% {
+        transform: translateX(80%);
+    }
+    
+    100% {
+        transform: translatex(0);
+    }
+  }
+  @keyframes swipeLeft {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translatex(0);
+    }
+  }
+  @keyframes fadeOut {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+  }
+  @keyframes y {
+      0% {
+        transform: translateY(60%);
+      }
+      100% {
+        transform: translateY(0);
+      }
+  }
+  .swipe-right {
+    animation: swipeRight 0.6s ease;
+  }
+  .swipe-left {
+    animation: swipeLeft 0.6s ease;
+  }
+  .swipe-left2 {
+    animation: swipeLeft 0.7s ease;
+  }
+  .swipe-up{
+    animation: y 0.6s ease;
+  }
+  .fade-out {
+    animation: fadeOut 4s ease-in-out forwards;
+  }
+  .fade-out2 {
+    animation: fadeOut 6s ease-in-out  forwards;
+  }
+  
